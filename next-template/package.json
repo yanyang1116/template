@@ -1,0 +1,27 @@
+{
+  "name": "next-template",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nxlibs/format": "^1.0.1",
+    "next": "15.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@nxlibs/eslint-config": "^1.0.2",
+    "@nxlibs/prettier-config": "^1.0.0",
+    "@nxlibs/typescript-config": "^1.0.2",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8.57.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
