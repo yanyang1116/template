@@ -1,2 +1,2 @@
 # template
-Template repository
+yy's template repository.

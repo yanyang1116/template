@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@nxlibs/format':
-        specifier: ^1.0.1
-        version: 1.0.1(big.js@6.2.2)(dayjs@1.11.13)
+        specifier: ^1.0.2
+        version: 1.0.2(big.js@6.2.2)(dayjs@1.11.13)
       next:
         specifier: 15.3.3
         version: 15.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -28,8 +28,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(prettier@3.5.3)
       '@nxlibs/typescript-config':
-        specifier: ^1.0.2
-        version: 1.0.2(typescript@5.8.3)
+        specifier: ^1.1.0
+        version: 1.1.0(@tsconfig/next@2.0.3)(typescript@5.8.3)
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.1.8
@@ -351,8 +351,8 @@ packages:
     peerDependencies:
       eslint: '>=8.0.0'
 
-  '@nxlibs/format@1.0.1':
-    resolution: {integrity: sha512-JwBTSrKI5ZlSJmZuNcpDtuYdLzqt6amuB0Ioj0Xhx1gog6sUlkWPT9YUvIXNbr871kkTH9keGckz1oesdLAoMA==}
+  '@nxlibs/format@1.0.2':
+    resolution: {integrity: sha512-L9+mU6EzF2ckiOczYCL1eKkNxwd6CdVcktnmnoka1LTlm0EPwTrfx3OmvhecYeEPevSmzUDYidpiwnEQimUVeA==}
     peerDependencies:
       big.js: ^6.0.0
       dayjs: ^1.11.0
@@ -362,9 +362,10 @@ packages:
     peerDependencies:
       prettier: '>=3.0.0'
 
-  '@nxlibs/typescript-config@1.0.2':
-    resolution: {integrity: sha512-I/MIY2ejKNaFrlG2XWY2cqg8ie4M8sJl3lX4/em0RRewvVekhLq1lEz9vKg0uatWtslZlygs8gKlj0gUy5iW1w==}
+  '@nxlibs/typescript-config@1.1.0':
+    resolution: {integrity: sha512-d8ESd1zHQKzq2FsSNB0j0gE70cmddwNgWq7J/W7NuYKBE6gZNcER2DGgKC7NvCimdPyWfoCzbasOfBITXuAjTw==}
     peerDependencies:
+      '@tsconfig/next': ^2.0.3
       typescript: '>=5.0.0'
 
   '@pkgr/core@0.2.7':
@@ -486,6 +487,9 @@ packages:
         optional: true
       svelte:
         optional: true
+
+  '@tsconfig/next@2.0.3':
+    resolution: {integrity: sha512-b4aKvmdWnv9aUy+NStUFlefirk3SItW20OJtbi5/ue9oMRaQtUYbN5zsr7OmV3rlx6Gp6h7A82gPoCXhrNGVPQ==}
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -2257,7 +2261,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@nxlibs/format@1.0.1(big.js@6.2.2)(dayjs@1.11.13)':
+  '@nxlibs/format@1.0.2(big.js@6.2.2)(dayjs@1.11.13)':
     dependencies:
       big.js: 6.2.2
       dayjs: 1.11.13
@@ -2273,8 +2277,9 @@ snapshots:
       - supports-color
       - svelte
 
-  '@nxlibs/typescript-config@1.0.2(typescript@5.8.3)':
+  '@nxlibs/typescript-config@1.1.0(@tsconfig/next@2.0.3)(typescript@5.8.3)':
     dependencies:
+      '@tsconfig/next': 2.0.3
       typescript: 5.8.3
 
   '@pkgr/core@0.2.7': {}
@@ -2372,6 +2377,8 @@ snapshots:
       prettier: 3.5.3
     transitivePeerDependencies:
       - supports-color
+
+  '@tsconfig/next@2.0.3': {}
 
   '@tybys/wasm-util@0.9.0':
     dependencies:

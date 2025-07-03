@@ -11,9 +11,10 @@
 
 ## TODO
 1. 路由双语
-2. image 考量和验证一下
+2. image 组件相关
 3. zy 的 ts api
 4. zy 的 图片转 react component
 5. immer
 6. zstands
 8. 静态页面导出
+9. 主题色
