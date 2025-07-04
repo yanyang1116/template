@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Production builds
+.next/
+out/
+build/
+dist/
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Environment files
+.env*
+
+# Generated files
+next-env.d.ts
+
+# Static assets
+public/**/*.svg
+public/**/*.png
+public/**/*.jpg
+public/**/*.ico
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# Cache
+.eslintcache
+*.tsbuildinfo
+
+# OS files
+.DS_Store
