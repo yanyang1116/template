@@ -4,7 +4,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "format": "prettier --write"
   },
   "dependencies": {
     "@nxlibs/format": "^1.0.2",
@@ -17,6 +19,8 @@
     "zustand": "^5.0.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@nxlibs/eslint-config": "^1.0.2",
     "@nxlibs/prettier-config": "^1.0.0",
     "@nxlibs/typescript-config": "^1.1.0",
@@ -25,6 +29,8 @@
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",
     "eslint": "^8.57.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"
