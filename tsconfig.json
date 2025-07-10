@@ -1,17 +1,19 @@
 {
-  "extends": "@nxlibs/typescript-config/nextjs.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "include": [
-    "module.d.ts",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": ["node_modules"]
+	"extends": "@nxlibs/typescript-config/nextjs.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+	"include": [
+		"module.d.ts",
+		"next-env.d.ts",
+		".*.cjs",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		".prettierrc.mjs"
+	],
+	"exclude": ["node_modules"]
 }
