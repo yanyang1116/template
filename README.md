@@ -51,3 +51,8 @@ query 管理，用 nuqs
 a. postcss 改成 cjs 不知道行不行
 b. eslintrc 不知道行不行，不是后缀的问题，而是从没验证过行不行
 c. commit lint 阶段还是考虑接入 es 和 ts
+
+"build": "next build",
+"start": "next start",
+"lint": "next lint",
+三个原生命令，处理

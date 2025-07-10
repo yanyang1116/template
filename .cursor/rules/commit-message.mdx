@@ -28,9 +28,9 @@ The `type` field must be one of the following:
 
 ### Scope
 
-The `scope` field is mandatory and should indicate the module or feature area being modified:
+The `scope` field is recommended but optional (warning level) and should indicate the module or feature area being modified:
 
-- Must be wrapped in parentheses
+- Should be wrapped in parentheses when used
 - Should be in lowercase
 - Should be concise but descriptive
 - Examples: (user), (auth), (home), (api)
@@ -52,6 +52,7 @@ fix(home): 修复移动端显示异常
 docs(readme): 更新项目说明文档
 style(components): 统一按钮样式
 refactor(auth): 重构认证逻辑
+feat: 添加新特性（scope可选）
 ```
 
 ❌ Bad commit messages:
@@ -68,7 +69,7 @@ FIX(USER): using uppercase
 1. No period at the end of the commit message
 2. Keep the total message length under 72 characters
 3. Use imperative mood in the type description
-4. The scope must be meaningful and accurately reflect the changed area
+4. The scope should be meaningful and accurately reflect the changed area when used
 5. If multiple areas are affected, use the most significant one as the scope
 
 ## Enforcement
