@@ -23,7 +23,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@nxlibs/eslint-config": "^1.0.2",
+    "@nxlibs/eslint-config": "^1.0.3",
     "@nxlibs/prettier-config": "^1.0.0",
     "@nxlibs/typescript-config": "^1.1.0",
     "@tailwindcss/postcss": "^4",

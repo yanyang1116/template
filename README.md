@@ -48,11 +48,14 @@ query 管理，用 nuqs
 13. 压测，以及压测方向的监控
 14. 单元测试，所有纯函数，都做单元测试
 
-a. postcss 改成 cjs 不知道行不行
 b. eslintrc 不知道行不行，不是后缀的问题，而是从没验证过行不行
 c. commit lint 阶段还是考虑接入 es 和 ts
 
 "build": "next build",
 "start": "next start",
-"lint": "next lint",
+"lint": "next lint", 不止运行 eslint，还会做一些类似于 doctor 的事情 https://github.com/vercel/next.js/discussions/59347
 三个原生命令，处理
+
+commit-message.mdx 这个主要是给命令行敲提交命令的时候去做参考，cursor 自带的生成工具不会去读取这个文件，它是根据历史记录，自动生成规则的
+
+lint stage 不需要 Lint，目前的 eslintrc 就是给 nextlint 用的，以及可能的编辑器检查
