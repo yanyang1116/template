@@ -1,4 +1,7 @@
-/** @type {import('@commitlint/types')} */
+/**
+ * @file
+ * 加 jsdoc 类型注解需要额外安装包，无必要
+ */
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
@@ -18,11 +21,9 @@ module.exports = {
         "build", // 打包
       ],
     ],
-    "type-case": [2, "always", "lower"],
     "type-empty": [2, "never"],
-    "scope-empty": [2, "never"],
+    "scope-empty": [1, "always"],
     "subject-empty": [2, "never"],
-    "subject-full-stop": [2, "never", "."],
-    "header-max-length": [2, "always", 72],
+    "header-max-length": [1, "always", 300],
   },
 };

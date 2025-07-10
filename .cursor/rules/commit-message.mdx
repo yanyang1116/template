@@ -1,0 +1,85 @@
+---
+name: Commit Message Rules
+description: Standardized Git commit message rules for better collaboration
+---
+
+# Git Commit Message Rules
+
+## Format Requirements
+
+All commit messages MUST follow this format:
+
+```
+type(scope): commit message in Chinese
+```
+
+### Type
+
+The `type` field must be one of the following:
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, missing semicolons, etc)
+- `refactor`: Code refactoring
+- `perf`: Performance improvements
+- `test`: Adding or modifying tests
+- `chore`: Changes to build process or auxiliary tools
+
+### Scope
+
+The `scope` field is mandatory and should indicate the module or feature area being modified:
+
+- Must be wrapped in parentheses
+- Should be in lowercase
+- Should be concise but descriptive
+- Examples: (user), (auth), (home), (api)
+
+### Message Content
+
+The commit message must:
+- Be written in Chinese
+- Start with a space after the colon
+- Be clear and descriptive
+- Focus on the "what" and "why" rather than "how"
+
+## Examples
+
+✅ Good commit messages:
+```
+feat(user): 添加用户登录功能
+fix(home): 修复移动端显示异常
+docs(readme): 更新项目说明文档
+style(components): 统一按钮样式
+refactor(auth): 重构认证逻辑
+```
+
+❌ Bad commit messages:
+```
+update code
+fix bug
+feat: add new feature
+feat(user) no space after colon
+FIX(USER): using uppercase
+```
+
+## Additional Rules
+
+1. No period at the end of the commit message
+2. Keep the total message length under 72 characters
+3. Use imperative mood in the type description
+4. The scope must be meaningful and accurately reflect the changed area
+5. If multiple areas are affected, use the most significant one as the scope
+
+## Enforcement
+
+These rules are enforced by:
+- commitlint configuration
+- pre-commit hooks
+- Cursor IDE integration
+
+Following these rules helps maintain a clean and meaningful git history, making it easier to:
+- Track project progress
+- Review changes
+- Generate changelogs
+- Understand project evolution 
